@@ -10,6 +10,7 @@
 - 论文解构模板：`../../templates/paper-xray.md`
 
 ## 3️⃣ 长期结论（迭代区）
+- **TwinFormer 与层级化时间序列建模 (2026-01-08)**：通过 Local/Global 双层注意力解耦补丁内/补丁间信息，结合 Top-k 稀疏注意力与 GRU 聚合器，可在保持线性复杂度的情况下超越 PatchTST 等扁平模型，成为超长序列预测（LSTSF）的新 SOTA 范式。
 - <从 daily 提纯出来的长期观点放这里>
 
 

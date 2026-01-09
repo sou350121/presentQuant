@@ -1,57 +1,55 @@
-# presentQuant：日更研究分析库（给人和 Agent 的可回忆知识库）
+# 📊 presentQuant：日更研究分析库
+> **“把碎片化的观察，沉淀为可检索、可复盘的知识资产。”**
 
-> 目标：把每天的研究/阅读/观察沉淀成 **可检索、可复用、可复盘** 的“分析库”。
-> 
-> 形态：GitHub 直读（纯 Markdown），结构参考 handbook 风格（如你提到的 VLA-Handbook）。
-
----
-
-## 1️⃣ 你可以怎么用（3 分钟上手）
-
-1️⃣ **每天新增一条研究笔记**：放到 `daily/YYYY-MM-DD.md`  
-2️⃣ **把结论提纯到主题**：放到 `taxonomy/<topic>/README.md`  
-3️⃣ **维护索引入口**：更新 `indices/topics.md` 与 `indices/timeline.md`
-
-> 如果你懒得写结构：直接复制 `templates/research-note.md` 开始填空。
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Knowledge Base](https://img.shields.io/badge/Knowledge-Handbook-blue.svg)](#)
+[![Daily Updates](https://img.shields.io/badge/Updates-Daily-green.svg)](#)
 
 ---
 
-## 2️⃣ 目录（推荐从这里开始）
+## 🧭 知识导航 (Dashboard)
 
-- **按主题浏览（主入口）**：`indices/topics.md`
-- **按时间回忆（时间线）**：`indices/timeline.md`
-- **术语表（统一口径）**：`indices/glossary.md`
-
----
-
-## 3️⃣ 写作规范（给自己 & 给 Agent）
-
-- **结论先行**：先给 3 点结论，再展开机制与证据
-- **证据优先**：关键判断必须附链接/截图/数据；无证据则标注“观察/推测”
-- **可执行清单**：每篇笔记尽量落 3-7 条行动项（否则知识无法复用）
-
-更多规则见：
-- `AGENT_CONSTITUTION.md`
-- `AGENT.md`
+| 📅 [时间线索引](./indices/timeline.md) | 🏷️ [主题树索引](./indices/topics.md) | 📖 [术语口径](./indices/glossary.md) |
+| :--- | :--- | :--- |
+| 按日期回溯研究足迹 | 结构化沉淀方法论 | 统一投研对话基准 |
 
 ---
 
-## 4️⃣ 结构说明（Physical Rails）
+## 🧠 核心主题 (Taxonomy)
 
-```text
-presentQuant/
-  README.md
-  AGENT.md
-  AGENT_CONSTITUTION.md
-  CONTRIBUTING.md
-  LICENSE
+| 主题 | 核心关注点 | 深度入口 |
+| :--- | :--- | :--- |
+| **📈 Quant 研究** | 因子异象、回测失真、风险预算 | [进入专题](./taxonomy/quant_research/README.md) |
+| **⚡ 市场微观结构** | 订单流、执行逻辑、冲击成本、T+1 异象 | [进入专题](./taxonomy/market_microstructure/README.md) |
+| **🤖 ML / AI** | LSTSF 预测、层级注意力、TwinFormer | [进入专题](./taxonomy/ml_ai/README.md) |
+| **⛓️ Crypto / DeFi** | 链上数据、协议机制、流动性分析 | [进入专题](./taxonomy/crypto/README.md) |
+| **🧬 LLM / Agents** | 编码代理、知识库构建、决策链路 | [进入专题](./taxonomy/llm_agents/README.md) |
+| **🛠️ 数据工程** | 管道设计、特征存储、高频数据处理 | [进入专题](./taxonomy/data_engineering/README.md) |
 
-  taxonomy/            # 主题树（长期沉淀）
-  daily/               # 日更（动态记录）
-  indices/             # 索引入口（可检索）
-  templates/           # 模板（可复用）
-  attachments/img/     # 图片/截图
-  runbooks/            # 维护手册
-```
+---
 
+## 🆕 最近更新 (Latest Updates)
 
+- **[2026-01-08]** [订单流归一化的市值匹配滤波器](./daily/2026-01-08.md)
+- **[2026-01-08]** [TwinFormer：长序列预测 SOTA 分析](./daily/2026-01-08.md)
+- **[2026-01-08]** [T+1 隔夜负收益之谜与逆向选择](./daily/2026-01-08.md)
+- **[2026-01-07]** [Daily Note 占位](./daily/2026-01-07.md)
+
+---
+
+## ✍️ 写作宪法 (Constitution)
+
+1. **结论先行**：每篇至少 3 点 TL;DR。
+2. **证据优先**：无证据不结论，推测需标注。
+3. **行动导向**：知识必须转化为 3-7 条可执行项。
+4. **层级沉淀**：`Daily` 记录灵感，`Taxonomy` 提纯方法论。
+
+---
+
+## 🛠️ 维护工具
+
+- **模板库**: [查看所有模板](./templates/)
+- **Agent 指令**: [AGENT.md](./AGENT.md) | [AGENT_CONSTITUTION.md](./AGENT_CONSTITUTION.md)
+
+---
+*Generated with ❤️ by presentQuant Agent.*
