@@ -20,8 +20,9 @@
   5. 原型回馈 Agent 优化文档。
   6. 交付研发评审。
 
-### 3.2 Kiro 的 spec-driven 交付体系
-- **从“会写”到“会交付”**：Kiro 的核心差异化在于其结构化的流水线（Prompt -> Requirements -> Architecture -> Tasks -> Agent）。
+### 3.2 Kiro 的 spec-driven 交付體系
+- **從「手動」到「自動流」 (2026-01-09)**：Kiro 的自動化潛力在於將 `file_save` 與 `prompt_submit` 等 Hook 與 `Powers` 動態掛載。實現「研發按保存鍵即完成索引更新、單測守衛與文檔同步」的全自動閉環。
+- **從「會寫」到「會交付」**：Kiro 的核心差異化在於其結構化的流水線（Prompt -> Requirements -> Architecture -> Tasks -> Agent）。
 - **EARS 记法**：将模糊意图翻译为可验收的硬约束。
 - **治理工具集**：
   - **Hooks**：后台触发的 Agent 流程（单测/文档/格式化）。
